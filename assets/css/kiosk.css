@@ -1,0 +1,124 @@
+
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'InterLight';
+    src: url('../fonts/Inter/Inter-Light.woff2') format('woff2'),
+        url('../fonts/Inter/Inter-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: 'InterMedium';
+    src: url('../fonts/Inter/Inter-Medium.woff2') format('woff2'),
+        url('../fonts/Inter/Inter-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: 'InterBold';
+    src: url('../fonts/Inter/Inter-Bold.woff2') format('woff2'),
+        url('../fonts/Inter/Inter-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: auto;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "InterMedium", "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background: #f3f7f9;
+    color: #606060;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    overflow-x: hidden
+}
+
+#body {
+    width: 100%;
+    padding: 0;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+.check-in-out {
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.btn-kiosk {
+    border: 0px;
+    padding: 6px 38px;
+    border-radius: 5px;
+    color: #9E9E9E;
+    font-size: 16px;
+    background: transparent;
+    outline: none;
+}
+
+.btn-kiosk.active {
+    background: #03A9F4;
+    color: white;
+    outline: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.creative-bg {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    z-index: -10;
+}
+
+/*------------ form label and input adjustments ------------*/
+.form-label {
+    font-size: .92857143em;
+}
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: rgb(29 161 242) 0px 0px 0px 1px;
+}
+
+.form-check-input:focus {
+    box-shadow: rgb(29 161 242) 0px 0px 0px 1px;
+}
+
+.form-check-input.is-valid:focus,
+.was-validated .form-check-input:valid:focus {
+    box-shadow: rgb(25 135 84) 0px 0px 0px 1px;
+}
+
+.form-check-input.is-invalid:focus,
+.was-validated .form-check-input:invalid:focus {
+    box-shadow: rgb(220 53 69) 0px 0px 0px 1px;
+}
+
+.form-control.is-valid:focus,
+.was-validated .form-control:valid:focus,
+.form-select.is-valid:focus,
+.was-validated .form-select:valid:focus {
+    box-shadow: rgb(25 135 84) 0px 0px 0px 1px;
+}
+
+.form-control.is-invalid:focus,
+.was-validated .form-control:invalid:focus,
+.form-select.is-invalid:focus,
+.was-validated .form-select:invalid:focus {
+    box-shadow: rgb(220 53 69) 0px 0px 0px 1px;
+}
